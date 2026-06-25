@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#unity-container {
+    width: min(1920px, 100vw);
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+}
+
+#unity-canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+body { padding: 0; margin: 0 }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
+#unity-progress-bar-empty { margin-left: auto; margin-right: auto; width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
